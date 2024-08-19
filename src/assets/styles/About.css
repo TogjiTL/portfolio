@@ -28,17 +28,14 @@
     max-width: 100%;
     height: auto;
     margin: 30px;
+    padding-top: 30px;
 }
 
-/* Sous-section */
-h3 {
-    padding: 20px 10px;
-}
-
-/* Titre compétences */
+/* Compétences */
 .skills-title {
     text-align: center;
     margin-top: 20px;
+    padding: 20px 10px;
 }
 
 .skills-title h3 {
@@ -46,7 +43,6 @@ h3 {
     font-style: italic;
 }
 
-/* Compétences */
 .competences {
     display: flex;
     justify-content: space-around;
@@ -59,8 +55,7 @@ h3 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: conic-gradient(var(--color) calc(var(--level) * 360deg),
-            var(--grey-light) calc(var(--level) * 360deg));
+    background: conic-gradient(var(--color) calc(var(--level) * 360deg), var(--grey-light) calc(var(--level) * 360deg));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,91 +79,71 @@ h3 {
     font-weight: bold;
     z-index: 2;
 }
+
 /* Experience */
-.timeline-container {
-    display: flex;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 0;
-    position: relative;
-}
+/* Frise */
 .timeline {
     position: relative;
-    flex: 1;
-    padding: 20px 0;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
+/* Ligne verticale */
 .timeline::before {
     content: '';
     position: absolute;
-    left: 0; /* Ligne verticale commence à gauche du conteneur */
-    top: 0;
     height: 100%;
     width: 2px;
     background-color: var(--blue-dark);
-    z-index: 1;
 }
 
+/* Expériences */
 .timeline-item {
     position: relative;
-    margin-bottom: 30px;
-    padding-left: 40px; /* Espacement pour le texte */
-    display: flex;
+    margin-bottom: 40px;
+    padding-left: 160px;
     align-items: center;
+    padding-bottom: 50px;
 }
 
-/* Ligne verticale centrale */
+/*.timeline-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.35s ease;
+}*/
+
+/* Points */
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -6px; /* Positionner le point fléché au niveau du texte */
+    left: -5.5px;
     width: 12px;
     height: 12px;
     background-color: var(--blue-dark);
     border-radius: 50%;
-    z-index: 2;
 }
 
 .timeline-date {
-    width: 150px;
+    position: absolute;
+    left: 0; /* Place la date à gauche */
+    top: 0;
+    width: 140px;
     text-align: center;
-    font-weight: bold;
-    background-color: var(--blue-dark);
-    color: var(--white);
-    padding: 10px;
-    border-radius: 6px;
+    padding-left: 10px;
+    border-radius: 20px;
 }
 
 .timeline-content {
-    margin-left: 20px;
+    padding-left: 50px;
+    /* padding: 20px; */
+    border-radius: 8px;
 }
 
 .timeline-box {
-    background-color: var(--white);
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 2;
-    min-width: 250px;
-    min-height: 150px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-/* Description */
-.extra-content {
-    flex: 1;
-    max-width: 35%;
-    margin-left: 20px;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.extra-content h3 {
-    padding-top: 0;
-}
-
-/* En savoir plus */
+/* En savoir plus : CV */
 .skills-button {
     text-align: center;
     margin-top: 30px;
@@ -194,6 +169,7 @@ h3 {
 
 /* Responsive*/
 @media (max-width: 768px) {
+    /* A propos */
     .about-section {
         flex-direction: column;
         align-items: center;
@@ -205,40 +181,31 @@ h3 {
     }
 
     .about-image {
-        margin-top: 20px;
-        text-align: center;
+        display: none;
     }
 
-    .about-image img {
-        max-width: 100%;
-        margin: 20px 0;
-    }
-
-    .timeline-container {
+    /* Compétences */
+    .competences {
         flex-direction: column;
-    }
-    .timeline {
-        margin-left: 0;
+        align-items: center;
     }
 
+    .skill-circle {
+        width: 100%;
+        max-width: 150px;
+        margin: 10px 0;
+    }
+
+    /* Expérience */
     .timeline-item {
-        padding-left: 0;
+        padding-left: 40px;
     }
 
     .timeline-date {
-        margin-bottom: 10px;
         width: auto;
     }
 
     .timeline-box {
-        min-width: 100%;
-    }
-
-    .timeline-item::before {
-        display: none;
-    }
-
-    .extra-content {
-        max-width: 100%;
+        width: 90%;
     }
 }

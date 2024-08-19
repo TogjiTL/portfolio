@@ -38,14 +38,14 @@ const About = () => {
                 </div>
             </div>
 
-            < div className="timeline-container" id="experience">
                 <div className="timeline">
                     <div className="timeline-item">
                         <div className="timeline-box">
                             <div className="timeline-date">2021 - 2023</div>
                             <div className="timeline-content">
                                 <h4>Linedata Services</h4>
-                                <p>Missions</p>
+                                <h5>Apprentie Analyste Support</h5>
+                                <p>Maintenance du progiciel financier Linedata EKIP360 et revue de code.</p>
                             </div>
                         </div>
                     </div>
@@ -54,17 +54,22 @@ const About = () => {
                             <div className="timeline-date">2020 - 2021</div>
                             <div className="timeline-content">
                                 <h4>Veolia Water Technologies</h4>
-                                <p>Missions</p>
+                                <h5>Script Developer</h5>
+                                <ul>
+                                    <li>Automatisation d'un processus de gestion de documents ;</li>
+                                    <li>Développement d'un hub d'outils pour les collaborateurs ;</li>
+                                    <li>Gestion de projet :
+                                        <ul>
+                                            <li>Reccueil des besoins</li>
+                                            <li>Rédaction des spécifications fonctionnelles et techniques</li>
+                                            <li>Planification des tâches et gestion des priorités</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            <div className="extra-content">
-                    <h3>Expérience</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    {/* <img src={ profil } alt="Example" style={{ width: '100%', borderRadius: '8px' }} /> */}
-                </div>
-            </div>
 
             <div className="skills-button">
                 <a href= { cv } target="_blank" className="btn-cv" rel="noreferrer">En savoir plus</a>
