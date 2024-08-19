@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+/* Apparence générale */
+:root {
+  --blue-pastel: #A3C2C2;
+  --violet-pastel: #D6A4A4;
+  --rose-pastel: #F2C6C6;
+  --grey-light: #F5F5F5;
+  --white: #FFFFFF;
+  --blue-dark: #2C3E50;
+  --violet-dark: #6C5B7B;
+  --light-blue: #BFDFFF;
+  --soft-violet: #C3B1E1;
+  --pastel-green: #A4CBB4;
+  --soft-rose: #E6A9A9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-padding-top: 85px;
+  color: var(--blue-dark);
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3, nav, .titre {
+  font-family: 'Nunito';
 }
 
+h2 {
+  padding-bottom: 5%;
+  font-size: 35px;
+}
+
+p {
+  font-size: 17px;
+}
+
+/* En-tête */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--white);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header.scrolled {
+  background-color: var(--white);
+  box-shadow: 0 4px 2px -2px gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* "Logo" */
+.titre {
+  width: 230px;
+  margin-left: 60px;
+}
+
+.titre a {
+  text-decoration: none;
+  color: var(--blue-dark);
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.titre a:hover {
+  color: var(--violet-dark);
+}
+
+/* Menu */
+.nav-links {
+  margin-right: 50px;
+  justify-content: flex-end;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: var(--blue-dark);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--violet-dark);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 40px;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Contenu */
+main {
+  margin-top: 30px;
+}
+
+section {
+  padding: 20px 20px;
+  margin: 20px auto;
+  max-width: 1100px;
+}
+
+section:first-child {
+  padding: 0;
+  margin: 0;
+}
+
+/* Slogan */
+.typed-text {
+  font-size: 24px;
+  height: 30px;
+  display: inline-block;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* Menu */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
   }
+
+  .nav-links li {
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 18px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
 }

@@ -1,0 +1,126 @@
+/* A propos */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+/* Texte et image */
+.about-text {
+    flex: 1;
+    padding-right: 30px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Image */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 75%;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+/* Sous-section */
+h3 {
+    padding: 20px 10px;
+}
+
+/* Titre compétences */
+.skills-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skills-title h3 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Compétences */
+.competences {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* padding: 100px 30px; */
+}
+
+.skill-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(var(--color) calc(var(--level) * 360deg),
+            var(--grey-light) calc(var(--level) * 360deg));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.skill-circle::before {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: var(--blue-dark);
+    z-index: 1;
+}
+
+.skill-name {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* En savoir plus */
+.skills-button {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--violet-dark);
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: var(--violet-pastel);
+    transform: scale(1.05);
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+}
