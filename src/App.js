@@ -5,6 +5,7 @@ import './App.css';
 
 import Home from './components/Home';
 import About from './components/About';
+import Experience from './components/Experience'
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -57,6 +58,7 @@ function App() {
           <ul class="nav-links">
             <li><a href="#home">Accueil</a></li>
             <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Expérience</a></li>
             <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -68,6 +70,7 @@ function App() {
       <main>
         <section id="home"><Home /></section>
         <section id="about"><About /></section>
+        <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>
         <section id="contact"><Contact /></section>
       </main>
