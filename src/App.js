@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-
-import '@fortawesome/fontawesome-free/css/all.min.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
 
 import Home from './components/Home';
 import About from './components/About';
-import Experience from './components/Experience'
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer'; // Import du Footer
 
 function App() {
   useEffect(() => {
@@ -55,15 +55,15 @@ function App() {
           <a href="#home">Portfolio</a>
         </div>
         <nav>
-          <ul class="nav-links">
+          <ul className="nav-links">
             <li><a href="#home">Accueil</a></li>
             <li><a href="#about">À propos</a></li>
             <li><a href="#experience">Expérience</a></li>
             <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <div class="hamburger">
-            <i className="fas fa-bars"></i> {}
+          <div className="hamburger">
+            <i className="fas fa-bars"></i>
           </div>
         </nav>
       </header>
@@ -74,6 +74,7 @@ function App() {
         <section id="projects"><Projects /></section>
         <section id="contact"><Contact /></section>
       </main>
+      <Footer />
     </div>
   );
 }
