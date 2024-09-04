@@ -6,10 +6,10 @@ import image from '../images/contact.jpg';
 const Contact = () => {
     return (
         <div className="contact-section">
-            <h2>Contact</h2>
+            <h2>Contactez-moi !</h2>
             <div className="contact-content">
                 <div className="contact-form-container">
-                    <form className="contact-form" action="#" method="post">
+                    <form className="contact-form" action="https://formspree.io/f/xjkbzwlo" method="post">
                         <div className="form-row">
                             <div className="form-group">
                                 <label htmlFor="name">Nom</label>
@@ -27,8 +27,8 @@ const Contact = () => {
                         <button type="submit">Envoyer</button>
                     </form>
                 </div>
-                <div className="contact-image">
-                    <img src={ image } alt="contact-image"/>
+                <div className="contact-image-wrapper">
+                    <img src={ image } alt="contact-image" className="contact-image"/>
                 </div>
             </div>
         </div>
