@@ -4,16 +4,12 @@
 }
 
 .timeline-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    color: #2C3E50;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
+/* Experiences */
 .experience-tags {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 38px;
 }
@@ -31,12 +27,9 @@
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
 }
 
+/* Date */
 .experience-date {
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    /* font-weight: 500; */
-    font-size: 15px;
-    color: #34495E;
     margin-top: 20px;
     margin-bottom: 30px;
     padding: 7px 20px;
@@ -45,28 +38,22 @@
     border-radius: 50px;
 }
 
+/* Contenu */
 .experience-content {
     display: flex;
-    flex-grow: 1;
-    height: 70%;
-    /* Prend tout l'espace disponible */
-    display: flex;
     flex-direction: column;
+    height: 73%;
 }
 
 .experience-title {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
     font-size: 20px;
-    color: #2C3E50;
     margin: 0;
 }
 
 .experience-company {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    color: #34495E;
+    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -76,17 +63,14 @@
     font-size: 16px;
     color: #7F8C8D;
     line-height: 1.6;
-    flex-grow: 1;
-    /* Utilise tout l'espace disponible au-dessus des étiquettes */
 }
 
+/* Compétences du poste */
 .skills-tags {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     margin-top: auto;
     margin-bottom: 10px;
-    /* Pousse les étiquettes vers le bas */
 }
 
 .skill-tag {
@@ -104,6 +88,7 @@
     background-color: var(--violet-pastel);
 }
 
+/* CV */
 .skills-button {
     margin-top: 30px;
     padding-top: 50px;
@@ -126,8 +111,47 @@
     transform: scale(1.05);
 }
 
+/* Responsive */
+@media (max-width: 1024px) {
+    .experience-item {
+        width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
+    .experience-tags {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .experience-item {
         width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .btn-cv {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-title {
+        font-size: 18px;
+    }
+
+    .experience-company,
+    .experience-description {
+        font-size: 14px;
+    }
+
+    .skill-tag {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+
+    .btn-cv {
+        font-size: 16px;
+        padding: 8px 16px;
     }
 }

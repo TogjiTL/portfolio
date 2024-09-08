@@ -105,4 +105,9 @@ h2 {
     .contact-image {
         display: none;
     }
+
+    .contact-form-container {
+        width: 100%;
+        flex: none;
+    }
 }

@@ -1,0 +1,83 @@
+.projects-section {
+    padding: 30px 20px;
+    /* background-color: #f9f9f9; */
+}
+
+.section-title {
+    padding-bottom: 20px;
+}
+
+.projects-content {
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.project-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-level {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.level-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.project-icon {
+    font-size: 24px;
+    color: #3498db;
+}
+
+.project-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #2C3E50;
+}
+
+.project-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #7F8C8D;
+}
+
+.future-projects,
+.github-invitation {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #7F8C8D;
+    margin-top: 40px;
+}
+
+.github-invitation a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-invitation a:hover {
+    color: #2C3E50;
+}

@@ -3,7 +3,7 @@ import '../assets/styles/Experience.css';
 import cv from '../CV_Togji_TAGBIA_LOUEVIE.pdf'
 
 const experiences = [
-    { year: "2021 - 2023", title: "Apprentie Analyste Support", company: "Linedata Services", description: "Maintenance du progiciel financier Linedata EKIP360 et revue de code.", skills: ["SQL", "PL/SQL", "Java", "XML", "Git"] },
+    { year: "2021 - 2023", title: "Apprentie Analyste Support", company: "Linedata Services", description: "Maintenance du progiciel financier Linedata EKIP360 et revue de code.", skills: ["SQL", "PL/SQL", "Java", "XML", "Git", "Jira"] },
     { year: "2020 - 2021", title: "Apprentie Script Developer", company: "Veolia Waters Technologies", description: "Automatisation d'un processus de gestion de documents, développement d'un hub d'outils pour les collaborateurs, gestion de projet.", skills: ["Java", "NodeJS", "AWS", "Git", "Google Suite"] }
 ];
 
