@@ -51,3 +51,9 @@
 .cta-button:hover {
     background-color: var(--violet-pastel);
 }
+
+@media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll;
+    }
+}
