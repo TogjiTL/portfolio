@@ -72,7 +72,7 @@ const Projects = () => {
                     <div className="project-card">
                         <FaCode className="project-icon" />
                         <h4>Pilulier intelligent</h4>
-                        <p>Création d'un prototype de pilulier intelligent pour les personnes atteintes de pathologies.</p>
+                        <p>Prototype de pilulier intelligent pour les personnes atteintes de pathologies.</p>
                     </div>
                 </div>
             </div>

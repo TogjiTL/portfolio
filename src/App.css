@@ -143,6 +143,9 @@ section:first-child {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .titre {
+    margin-left: 40px;
+  }
   /* Menu */
   .nav-links {
     display: none;

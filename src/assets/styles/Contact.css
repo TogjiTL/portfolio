@@ -111,3 +111,18 @@ h2 {
         flex: none;
     }
 }
+
+@media (max-width: 480px) {
+    .contact-form .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form .form-row .form-group {
+        width: 100%;
+    }
+
+    .contact-form-container {
+        padding: 0 10px;
+    }
+}

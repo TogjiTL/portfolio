@@ -55,5 +55,7 @@
 @media (max-width: 768px) {
     .hero-section {
         background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
     }
 }
